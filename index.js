@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var rp = require("request-promise");
 var minimist = require("minimist");
 var cheerio = require("cheerio");
