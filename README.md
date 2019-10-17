@@ -29,4 +29,4 @@ For a list of contributors that have made minor contributions go [here](https://
 
 ## License
 
-No.
+MIT
