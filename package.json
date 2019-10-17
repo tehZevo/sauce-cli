@@ -1,6 +1,6 @@
 {
   "name": "sauce-cli",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "saucebot in your shell",
   "main": "index.js",
   "scripts": {
