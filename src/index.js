@@ -28,7 +28,7 @@ async function doRequest(url, options)
   }
 
   //otherwise return html
-  return htm
+  return html
 };
 
 module.exports = async () =>
