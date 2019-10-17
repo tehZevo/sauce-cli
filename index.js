@@ -1,9 +1,10 @@
 #!/usr/bin/env node
+// w e l c o m e  t o  m y  j a v a s c r i p t  t u t o r i a l
 
-var rp = require("request-promise");
-var minimist = require("minimist");
-var cheerio = require("cheerio");
-var UserAgent = require("user-agents");
+const rp = require("request-promise");
+const minimist = require("minimist");
+const cheerio = require("cheerio");
+const UserAgent = require("user-agents");
 
 function iflUrl(query)
 {
@@ -13,28 +14,28 @@ function iflUrl(query)
 async function doRequest(url, options)
 {
   options.uri = url;
-  var html = await rp(options);
-  var $ = cheerio.load(html);
+  let html = await rp(options);
+  let $ = cheerio.load(html);
 
-  var title = $("title").text();
+  let title = $("title").text();
   //if redirect page
   if(title == "Redirect Notice")
   {
     //grab first link
-    var redirectUrl = $("a").attr("href");
+    let redirectUrl = $("a").attr("href");
     //surf link
     return await doRequest(redirectUrl, options);
   }
 
   //otherwise return html
-  return html;
-}
+  return htm
+};
 
 module.exports = async () =>
 {
-  var args = minimist(process.argv.slice(2));
-  var agent = new UserAgent().toString();
-  var options = {
+  let args = minimist(process.argv.slice(2));
+  let agent = new UserAgent().toString();
+  let options = {
     headers: {'user-agent': agent}
   }
 
@@ -43,12 +44,12 @@ module.exports = async () =>
     return;
   }
 
-  var query = args._.join(" ");
-  var url = iflUrl(query);
+  let query = args._.join(" ");
+  let url = iflUrl(query);
 
   if (args.output || args.o)
   {
-    var html = await doRequest(url, options);
+    let html = await doRequest(url, options);
     console.log(html);
   }
   else
