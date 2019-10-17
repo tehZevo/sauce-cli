@@ -19,3 +19,14 @@ save a page for later reading:
 ```
 $ sauce -o independence of cyberspace > dec.html
 ```
+
+## Contributors
+
+    - [tehZevo](https://github.com/tehZevo)
+    - [Grey](https://github.com/Chronomly)
+
+For a list of contributors that have made minor contributions go [here](https://github.com/tehZevo/sauce-cli/graphs/contributors)
+
+## License
+
+No.
