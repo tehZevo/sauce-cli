@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // w e l c o m e  t o  m y  j a v a s c r i p t  t u t o r i a l
+// T o d a y  w e  w i l l  l e a r n  h o w  t o o  m a k e  a  c l i  s c r i p t
 
 const rp = require("request-promise");
 const minimist = require("minimist");
@@ -28,8 +29,8 @@ async function doRequest(url, options)
   }
 
   //otherwise return html
-  return html
-};
+  return html;
+}
 
 module.exports = async () =>
 {
